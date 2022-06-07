@@ -39,7 +39,7 @@ def get_text_messages(message):
 
 @bot.message_handler(content_types=["document"])
 def upload_file(message):
-    if message.from_user.id not in [221811792]:
+    if message.from_user.id not in []:
         bot.send_message(message.from_user.id, 'Вы не можете добавлять документы')
     else:
         doc_info = []
